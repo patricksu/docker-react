@@ -8,6 +8,7 @@ before_install:
 script:
   - docker run -e CI=true psu/docker-react npm run test -- --coverage
 
+
 deploy:
   edge: true
   provider: elasticbeanstalk
